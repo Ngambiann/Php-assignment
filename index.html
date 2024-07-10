@@ -1,0 +1,30 @@
+<!-- HTML form -->
+<html>
+<head>
+    <title>Login and Sign up form</title>
+</head>
+<body>
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br><br>
+
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password"><br><br>
+
+        <input type="submit" value="Login" name="login"><br><br>
+    </form>
+
+    <form method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
+        <label for="signup_username">Username:</label><br>
+        <input type="text" id="signup_username" name="signup_username"><br><br>
+
+        <label for="signup_password">Password:</label><br>
+        <input type="password" id="signup_password" name="signup_password"><br><br>
+
+        <label for="signup_email">Email:</label><br>
+        <input type="email" id="signup_email" name="signup_email"><br><br>
+
+        <input type="submit" value="Sign up" name="signup"><br><br>
+    </form>
+</body>
+</html>
