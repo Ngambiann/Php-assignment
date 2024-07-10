@@ -7,9 +7,7 @@ if (isset($_POST['signup'])) {
  
     $sql = "INSERT INTO users (username, password) VALUES ('$signup_username',('$signup_password')";
     mysqli_query($conn, $sql);
-
-  
-    echo "Hello" . $signup_username;
+       echo "Hello";
 }
 
 
