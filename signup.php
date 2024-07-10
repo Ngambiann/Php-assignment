@@ -2,7 +2,14 @@
 if (isset($_POST['signup'])) {
     $signup_username = $_POST['signup_username'];
     $signup_password = $_POST['signup_password'];
-    $signup_email = $_POST['signup_email'];
-    echo "Hello!" . $_POST['signup'];
+    
+
+ 
+    $sql = "INSERT INTO users (username, password) VALUES ('$signup_username',('$signup_password')";
+    mysqli_query($conn, $sql);
+
+  
+    echo "Hello" . $signup_username;
 }
-?>
+
+
